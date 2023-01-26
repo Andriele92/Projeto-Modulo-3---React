@@ -1,9 +1,7 @@
 function Cadastro() {
-    return (
-        <div>
-            
-        </div>
-    )
+    return(  <div>
+      C 
+    </div>)
+  
 }
-
-export default Cadastro;
+export default Cadastro
