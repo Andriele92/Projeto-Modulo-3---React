@@ -1,14 +1,19 @@
 import { useState } from 'react'
-import './App.css'
-import  './Pages/Home'
-import './components/Rodape'
-import './components/Cabecalho'
-function App (){
-    return (
-        <div>
-        <Cabecalho/>
+import {BrowserRouter, Routes, Route, Outlet} from 'react-router-dom'
+import Cabecalho from '../src/components/Cabecalho'
+import Rodape from './components/Rodape'
+import './App.css?inline'
+function App() {
+  const [count, setCount] = useState(0)
 
-        </div>
-    )
+  return (
+    <>
+      <Cabecalho/>
+      <Outlet/>
+      <Rodape/>
+    </>
+    
+  )
 }
+
 export default App
