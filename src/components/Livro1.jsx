@@ -13,6 +13,7 @@ function Livros() {
  })
     return (
         <div className='content product-grid'>
+        <h2>Livros</h2><br/>
         {livros?.map((livro) => (
        <button key={livro.id}> {livro.nome}<br/>R$:{livro.preco}</button>
         ))}
