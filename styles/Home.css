@@ -1,0 +1,148 @@
+@keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.logotipo {
+    animation: logo-spin infinite 20s linear;
+  }
+
+  .separacao {
+    background-color: black;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .SessaoLinks {
+    text-align: center;
+  }
+
+  .carousel {
+    height: 510px;
+    align-items: center;
+    margin-left: 50% auto;
+  }
+
+  .ImagemCarrossel {
+    height: 510px;
+  }
+
+.imag {
+  height: 350px;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.secao-contato {
+  text-align: center;
+  padding: 24px;
+}
+
+.link-instagram,
+.link-whatsapp,
+.link-facebook,
+.link-email,
+.link-faleconosco {
+    text-decoration: none;
+    padding: 16px;
+    margin: 8px;
+    background-color: #61DBFB;
+    color: black;
+    border-radius: 16%;
+    width: 80px;
+    height: 80px;
+}
+
+.link-instagram:hover {
+    background: linear-gradient(to bottom left, #515bd4, #8134af, #dd2a7b, #feda77, #f58529);
+    color: white;
+    border: 2px solid white;
+    transition: 0.2s;
+    box-shadow: 2px 2px 2px #dd2a7b;
+    transform: scale(1.1);
+}
+
+.link-whatsapp:hover {
+    background-color: #25D366;
+    color: white;
+    border: 2px solid white;
+    transition: 0.2s;
+    box-shadow: 2px 2px 2px #075E54;
+    transform: scale(1.1);
+}
+
+.link-facebook:hover {
+    background-color: #1778f2;
+    color: white;
+    border: 2px solid white;
+    transition: 0.2s;
+    box-shadow: 2px 2px 2px #898F9C;
+    transform: scale(1.1);
+}
+
+.link-email:hover {
+    background-color: #ff0050;
+    color: white;
+    border: 2px solid white;
+    transition: 0.2s;
+    box-shadow: 2px 2px 2px #ff0050;
+    transform: scale(1.1);
+}
+
+.link-faleconosco:hover {
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    transition: 0.2s;
+    box-shadow: 2px 2px 2px black;
+    transform: scale(1.1);
+}
+
+/*Onde estamos*/
+
+.onde-estamos {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.mapaBox {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: none!important;
+}
+
+iframe {
+  width: 1000px;
+  height: 360px;
+}
+
+
+.relogio {
+  color: #61DBFB;
+  margin: 4px;
+}
+
+.horario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+/*Footer*/
+
+.texto-footer {
+  padding-top: 24px;
+}

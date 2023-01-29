@@ -3,7 +3,6 @@ import {BrowserRouter, Routes, Route, Outlet} from 'react-router-dom'
 import Cabecalho from '../src/components/Cabecalho'
 import Rodape from './components/Rodape'
 import './App.css?inline'
-
 function App() {
   const [count, setCount] = useState(0)
 
