@@ -5,4 +5,4 @@ O projeto que consiste utilizar o JASON-SERVER, usando métodos GET, POST, PUT E
 - Get foi ultilizado na páginas de produtos.
 - Biblioteca axios também foi ultilizada na pagina de produtos 
 - Para separação das páginas e rotas, foi utilizada biblioteca react-router-dom
-- Na pagina de cadastro, usado métodos Post  e Delete. 
+- Na pagina de cadastro, usado métodos Post. 
