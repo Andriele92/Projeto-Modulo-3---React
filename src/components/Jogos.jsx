@@ -15,7 +15,7 @@ function Jogos() {
         <div className='content product-grid'>
         {jogos?.map((jogo) => (
        <div key={jogo.id} className="global"><img src={jogo.img} alt="myimage" className="myimage"/><br/>
-       <br/><button class="text-white">{jogo.nome}<br/>{jogo.jogadores}<br/>R$:{jogo.preco}</button> </div>
+       <br/><button class="bg-dark text-white">{jogo.nome}<br/>{jogo.jogadores}<br/>R$:{jogo.preco}</button> </div>
         ))}
         </div>
         );
