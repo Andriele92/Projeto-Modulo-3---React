@@ -16,7 +16,7 @@ function Boxes() {
     return (
         <div className='content product-grid'>
         {boxes?.map((box) => (<div key={box.id} className="global"><img src={box.img} alt="myimage" className="myimage"/><br/>
-                <Popup trigger={<button class="text-white"> {box.nome}<br/>R$:{box.preco}</button>} modal nested>{close => (<div class="bg-info text-white"><p>{box.descricao}</p> <br/><button onClick={close}>Fechar</button></div>)}
+                <Popup trigger={<button class="bg-dark text-white"> {box.nome}<br/>R$:{box.preco}</button>} modal nested>{close => (<div class="bg-info text-white"><p>{box.descricao}</p> <br/><button onClick={close}>Fechar</button></div>)}
                 </Popup></div>
         ))}
         </div>
