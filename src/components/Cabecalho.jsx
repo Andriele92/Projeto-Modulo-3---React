@@ -15,7 +15,7 @@ export default function Cabecalho() {
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-          <Link to="/home"><a class="nav-link">Início<span class="sr-only">(Página atual)</span></a></Link>
+          <Link to="/"><a class="nav-link">Início<span class="sr-only">(Página atual)</span></a></Link>
           </li>
           <li class="nav-item">
             <Link to="/produtos"><a class="nav-link">Produtos</a></Link>

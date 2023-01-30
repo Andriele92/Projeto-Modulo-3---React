@@ -5,7 +5,7 @@ function Jogos() {
     const [jogos, setJogos] = useState()
     useEffect(()=>{
    axios
-    .get("https://individual-work.onrender.com/jogos")
+    .get("https://teste-igjg.onrender.com/jogos")
     .then((result) =>{
         console.log(result)
         setJogos(result.data) })
@@ -14,7 +14,8 @@ function Jogos() {
     return (
         <div className='content product-grid'>
         {jogos?.map((jogo) => (
-       <button key={jogo.id}> {jogo.nome}<br/>R$:{jogo.preco}</button>
+       <div key={jogo.id} className="global"><img src={jogo.img} alt="myimage" className="myimage"/><br/>
+       <br/><button class="text-white">{jogo.nome}<br/>{jogo.jogadores}<br/>R$:{jogo.preco}</button> </div>
         ))}
         </div>
         );

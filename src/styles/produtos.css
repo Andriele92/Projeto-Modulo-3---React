@@ -7,3 +7,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
   }
+.Bode{
+  width: 100%;
+  background-color: aquamarine;
+}

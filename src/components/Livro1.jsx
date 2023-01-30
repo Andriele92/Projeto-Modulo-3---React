@@ -1,11 +1,12 @@
 import { useState } from "react"
 import { useEffect } from "react";
 import  axios  from "axios";
+import Popup from "reactjs-popup";
 function Livros() {
     const [livros, setLivro] = useState()
     useEffect(()=>{
    axios
-    .get("https://individual-work.onrender.com/livros")
+    .get("https://teste-igjg.onrender.com/livros")
     .then((result) =>{
         console.log(result)
         setLivro(result.data) })
@@ -13,10 +14,13 @@ function Livros() {
  })
     return (
         <div className='content product-grid'>
-        <h2>Livros</h2><br/>
-        {livros?.map((livro) => (
-       <button key={livro.id}> {livro.nome}<br/>R$:{livro.preco}</button>
-        ))}
+        {livros?.map((livro) => {
+            return (
+                <div key={livro.id} className="global"> <img src={livro.img} alt="myimage" className="myimage" /><br/>
+                  <Popup trigger={<button class="text-white">{livro.nome}<br/>R$:{livro.preco}</button>} modal nested>
+                    {close => (<div class="bg-info text-white"><p>{livro.sinopse}</p><br/><button onClick={close}>Fechar</button></div>)}</Popup></div>
+            );
+        })}
         </div>
         );
         
