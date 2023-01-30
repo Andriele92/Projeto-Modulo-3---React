@@ -1,5 +1,5 @@
 .formularioCadastro {
-    width: 300px;
+    width: 500px;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -33,6 +33,7 @@
   
   main {
     display: flex;
+     width: 500px;
     justify-content: center;
     margin-left: 50%;
     margin-right: 50%;
