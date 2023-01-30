@@ -17,7 +17,7 @@ function Livros() {
         {livros?.map((livro) => {
             return (
                 <div key={livro.id} className="global"> <img src={livro.img} alt="myimage" className="myimage" /><br/>
-                  <Popup trigger={<button class="text-white">{livro.nome}<br/>R$:{livro.preco}</button>} modal nested>
+                  <Popup trigger={<button class="bg-dark text-white">{livro.nome}<br/>R$:{livro.preco}</button>} modal nested>
                     {close => (<div class="bg-info text-white"><p>{livro.sinopse}</p><br/><button onClick={close}>Fechar</button></div>)}</Popup></div>
             );
         })}
